@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipFlop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=East+Sea+Dokdo&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="head">Flip<span>Flop</span></h1>
+      <nav> 
+        <ul class="navbar-ul">
+          <a href="/index.html">
+            <li class="navbar-li">
+              Home
+            </li>
+          </a> 
+          <a href="/game.html">
+            <li class="navbar-li">
+              Login 
+            </li>
+          </a>   
+          <a href="/about.html">
+            <li class="navbar-li">
+              About
+            </li>
+          </a>
+        </ul>
+      </nav>
+   </header>
+  <div class="game-container">
+    <div class="sidebox">
+        <h2>Score Board</h2>
+        <div class="score">
+            <h3>Best Time</h3>
+            <hr>
+            <div class="score-time">00000</div>
+            <div class="score-time">00000</div>
+            <div class="score-time">00000</div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="card" data-name="image1">
+          <img class="front" src="./images/image1.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image1">
+          <img class="front" src="./images/image1.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image2">
+          <img class="front" src="./images/image2.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image2">
+          <img class="front" src="./images/image2.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image3">
+          <img class="front" src="./images/image3.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image3">
+          <img class="front" src="./images/image3.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image4">
+          <img class="front" src="./images/image4.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image4">
+          <img class="front" src="./images/image4.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image5">
+          <img class="front" src="./images/image5.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image5">
+          <img class="front" src="./images/image5.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image6">
+          <img class="front" src="./images/image6.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image6">
+          <img class="front" src="./images/image6.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image7">
+          <img class="front" src="./images/image7.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image7">
+          <img class="front" src="./images/image7.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image8">
+          <img class="front" src="./images/image8.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="card" data-name="image8">
+          <img class="front" src="./images/image8.png" alt="" width="60px" height="60px">
+          <img class="back" src="./images/memory.png" alt="" width="60px" height="60px">
+        </div> 
+    </div>
+    <div class="timerbox">
+      <h2>Timer Board</h2>
+      <div class="timer">
+          <h3>Time</h3>
+          <hr>
+          <div class="time" id="time"></div>
+      </div>
+      <div class="btn" onclick="Start()">Play</div>
+      <h3 id="finish"></h3>
+  </div>
+  </div>
+<script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    background-color:#ECF0F3;
+}
+
+header{
+    width: 100%;
+    height: 72px;
+    background-color:  #33383E;
+}
+
+
+.head{
+    font-size: 3.0vm;
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    color: rgb(55, 141, 55);
+    font-family: 'Alfa Slab One', cursive;
+}
+span{
+    color: white;
+}
+.navbar-ul{
+    width: auto;
+    float: right;
+    margin-top: 8px;
+}
+.navbar-li{
+    display: inline-block;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+    background-color: #33383E ;
+    border-radius: 40px;
+    box-shadow: 
+    2px 2px 3px 0 rgba(0, 0, 0, 0.25),
+    -2px -2px 3px 0 rgba(255, 255, 255,0.18);
+
+}
+
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size : 1.2vm;
+
+}
+
+.navbar-li:hover{
+    background-color: rgb(55, 141, 55);
+}
+
+.jumbotron{
+    padding: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+
+}
+
+.jumbotron > h1 {
+    font-size: 5.2em;
+    margin-top: 10px;
+    margin-top: 10px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    color: rgb(55, 141, 55);
+}
+
+
+.button {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 2.0em;
+    color: black;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+}
+
+.button:hover{
+    background-color: rgb(55, 141, 55);
+}
+
+/* Game page */
+.game-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-gap: 10px
+}
+.sidebox{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.sidebox > h2 {
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 2.0em;
+    color: black;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+}
+
+.score{
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 10px;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+}
+.score > h3{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    font-family: 'East Sea Dokdo', cursive;
+}
+
+.score-time{
+    margin-top: 5px;
+    font-family: 'Open Sans',sans-serif;
+}
+.timerbox{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.timerbox > h2 {
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 2.0em;
+    color: black;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+}
+.timerbox > h3 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 2.0em;
+    color: black;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+}
+
+.timer{
+    margin-top: 20px;
+    padding: 10px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 10px;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+}
+.timer > h3{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    font-family: 'East Sea Dokdo', cursive;
+}
+
+.score-time{
+    margin-top: 5px;
+    font-family: 'Open Sans',sans-serif;
+}
+.btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 2.0em;
+    color: black;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color:  rgb(55, 141, 55);
+
+}
+/* main */
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    margin: auto;
+    margin-top: 30px;
+    perspective: 1000px;
+}
+.card{
+    display: inline-grid;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+    transform: scale(1);
+    transform-style:preserve-3d ;
+    transition: transform .5s;
+    
+}
+
+/* .back{
+    visibility: hidden;
+
+} */
+
+.front, .back{
+    position: absolute;
+    padding: 30px;
+    border-radius: 20px;
+    backface-visibility: hidden;
+}
+
+.card:active{
+    transform: scale(0.97);
+     transition: transform .2s;
+}
+
+.card.flip{
+    transform: rotateY(180deg);
+}
+
+.front{
+    transform: rotateY(180deg);
+}
+
+
+/* level */
+
+.level{
+    margin-top: 20px;
+    padding: 10px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 10px;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+}
+
+ 
+
+
+
+
+
+/* images */
+#image1 {
+    background: white url('image/image1.jgp') no-repeat center;
+    background-size: contain;
+}
+#image2 {
+    background: white url('image/image2.jgp') no-repeat center;
+    background-size: contain;
+}
+#image3 {
+    background: white url('image/image3.jgp') no-repeat center;
+    background-size: contain;
+}
+#image4 {
+    background: white url('image/image4.jgp') no-repeat center;
+    background-size: contain;
+}
+#image5 {
+    background: white url('image/image5.jgp') no-repeat center;
+    background-size: contain;
+}
+#image6 {
+    background: white url('image/image6.jgp') no-repeat center;
+    background-size: contain;
+}
+#image7 {
+    background: white url('image/image7.jgp') no-repeat center;
+    background-size: contain;
+}
+#image8 {
+    background: white url('image/image8.jgp') no-repeat center;
+    background-size: contain;
+}
