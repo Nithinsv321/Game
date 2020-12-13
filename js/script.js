@@ -5,7 +5,13 @@ let cardClicked = false;
 let locked = false;
 let first,second;
 let pass;
-let flip =0;
+let flip;
+// overlay
+(function on(){
+    document.getElementById("overlay1").style.display = "block";
+    document.getElementById("overlay2").style.display = "none";
+})();
+
 function flipCard(){
     if(locked) return;
     if(this == first) return;
@@ -64,6 +70,9 @@ function shuffle(){
 }
 
 function Start(){
+    document.getElementById("overlay1").style.display = "none";
+    document.getElementById("overlay2").style.display = "none";
+    finish = false;
     flip=0;
     shuffle();
     let timeleft = 3;
@@ -71,17 +80,15 @@ function Start(){
         if(timeleft < 0){
           clearInterval(timer);
           document.getElementById("time").innerHTML = "";
-          StartTimer();
+            StartTimer();
         } else {
           document.getElementById("time").innerHTML = timeleft + " seconds remaining";
+          timeleft -= 1;
         }
-        timeleft -= 1;
     }, 1000);
     let fliptimer= setInterval(() => {
         if(flip == 8){
-            clearInterval(fliptimer)
-            const element = document.getElementById('finish');
-            element.innerHTML= "Finished";
+            clearInterval(fliptimer);
             finished();
         }
     }, 1000);
@@ -96,28 +103,25 @@ function Start(){
     },4000);
 }
 function finished(){
+    document.getElementById('overlay2').style.display = "block";
     finish = true;
     flip=0;
     resetCard();
 }
 function StartTimer(){
     let time = 0;
-    let min =0;
     let timer = setInterval(function(){
-        if(finish == true){
-            pass = `${min} Minutes : ${time} Seconds`;
+        if(finish == true ){
+            pass = `${time} Seconds`;
             clearInterval(timer);
-            document.getElementById("time").innerHTML =min +" Minutes :"+time+" Seconds" ;
+            return document.getElementById("msg").innerHTML =time +" Seconds"; 
         }
-        if(time == 60 ){
-            min++;
-            time =0;
-        }  
-        if(min > 5){
-            window.alert('Time up');
+        if(time > 59){
             clearInterval(timer);
+            finished();
+            return document.getElementById("msg").innerHTML ="Time Out" ;
         }
-        document.getElementById("time").innerHTML =min +" Minutes :"+time+" Seconds" ;
+        document.getElementById("time").innerHTML =time+" Seconds" ;
         time++;
     }, 1000);
 }
@@ -125,4 +129,8 @@ function StartTimer(){
 cards.forEach(function(card){
     card.addEventListener('click',flipCard);
 });
+
+
+
+
 

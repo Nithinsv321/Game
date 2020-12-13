@@ -6,6 +6,7 @@
     <title>FlipFlop</title>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=East+Sea+Dokdo&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <header>
@@ -22,9 +23,9 @@
               Login 
             </li>
           </a>   
-          <a href="/about.html">
+          <a href="main.html">
             <li class="navbar-li">
-              About
+                Profile
             </li>
           </a>
         </ul>
@@ -114,9 +115,17 @@
           <hr>
           <div class="time" id="time"></div>
       </div>
-      <div class="btn" onclick="Start()">Play</div>
-      <h3 id="finish"></h3>
+    </div>
   </div>
+  <div id="overlay1">
+    <div  id="start" onclick="Start()">Play</div>
+  </div>
+  <div id="overlay2">
+    <div  id="finish" >
+        <div id="msg"></div>
+        <div class="overbtn"onclick="Start()">PlayAgain</div>
+        <a href="main.html"><div class="overbtn">Profile</div></a>
+    </div>
   </div>
 <script src="./js/script.js"></script>
 </body>

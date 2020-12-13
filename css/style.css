@@ -9,6 +9,11 @@ header{
     height: 72px;
     background-color:  #33383E;
 }
+hr{
+    color: #33383E;
+    width: 80%;
+    opacity: 60%;
+}
 
 
 .head{
@@ -103,7 +108,6 @@ a{
     width: 100%;
     display: grid;
     grid-template-columns: 20% auto 20%;
-    grid-gap: 10px
 }
 .sidebox{
     display: inline-block;
@@ -186,6 +190,7 @@ a{
     margin-top: 20px;
     padding: 10px;
     margin-right: 20px;
+    height:150px;
     text-align: center;
     background-color: #ECF0F3;
     border-radius: 10px;
@@ -195,8 +200,12 @@ a{
 }
 .timer > h3{
     margin-top: 10px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     font-size: 1.5em;
+    font-family: 'East Sea Dokdo', cursive;
+}
+.time{
+    font-size: 2.0rem;
     font-family: 'East Sea Dokdo', cursive;
 }
 
@@ -297,36 +306,4 @@ a{
 
 
 
-/* images */
-#image1 {
-    background: white url('image/image1.jgp') no-repeat center;
-    background-size: contain;
-}
-#image2 {
-    background: white url('image/image2.jgp') no-repeat center;
-    background-size: contain;
-}
-#image3 {
-    background: white url('image/image3.jgp') no-repeat center;
-    background-size: contain;
-}
-#image4 {
-    background: white url('image/image4.jgp') no-repeat center;
-    background-size: contain;
-}
-#image5 {
-    background: white url('image/image5.jgp') no-repeat center;
-    background-size: contain;
-}
-#image6 {
-    background: white url('image/image6.jgp') no-repeat center;
-    background-size: contain;
-}
-#image7 {
-    background: white url('image/image7.jgp') no-repeat center;
-    background-size: contain;
-}
-#image8 {
-    background: white url('image/image8.jgp') no-repeat center;
-    background-size: contain;
-}
+ 

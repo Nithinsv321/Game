@@ -1,0 +1,144 @@
+.main-container{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+.side-profile{
+    margin-top:20px ;
+    margin-right:20px ;
+    text-align: center;
+    padding: 20px;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+}
+.profile-photo{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+}
+
+.game-details{
+    margin-top:20px ;
+    text-align: center;
+    grid-template-rows: auto auto;
+}
+
+
+
+.best-score{
+    padding: 20px;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+}
+
+.instruction{
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+    box-shadow: 
+    4px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.856);
+}
+
+
+
+/* overlay */
+#overlay1 {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  
+}
+#overlay2 {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  
+}
+
+#start{
+    position: absolute;
+    padding: 10px 20px;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 2.0em;
+    color: black;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    cursor: pointer; /* Add a pointer on hover */
+}
+#finish{
+    position: absolute;
+    padding: 10px 20px;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 2.0em;
+    color: black;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    cursor: default;
+}
+
+#msg{
+    position: relative;
+    font-size: 3.0em;
+    color: black;
+    text-align: center; 
+}
+
+.overbtn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 1.3em;
+    color: black;
+    text-align: center;
+    background-color: #ECF0F3;
+    border-radius: 30px;
+}
+
+.overbtn:hover{
+    cursor: pointer;
+    background-color:  rgb(55, 141, 55);
+}

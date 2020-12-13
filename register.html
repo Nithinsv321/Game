@@ -6,6 +6,7 @@
     <title>FlipFlop</title>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=East+Sea+Dokdo&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
    <header>
@@ -30,11 +31,28 @@
            </ul>
        </nav>
    </header>
-   <div class="jumbotron">
-    <h1>Welcome</h1>
-    <!-- <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> -->
-    <a class="button" href="game.html">PLay Now</a>
-  </div>
+   <div class="login-container">
+        <h2>Register</h2>
+        <form action="" method="post" id="form" enctype="multipart/form-data">
+          <div class="form-fields">
+            <input type="email" placeholder="Email">
+          </div>
+          <div class="form-fields">
+            <input type="text" placeholder="Name">
+          </div>
+          <div class="form-fields">
+            <input type="password" placeholder="Password">
+          </div>
+          <div class="form-fields">
+            <input type="password" placeholder="Confirm Password">
+          </div>
+          <div class="form-fields">
+            <input type="file" >
+          </div>
+          <div class="page-nav"> Existing User&nbsp; <a href="login.html">&nbsp; Login &nbsp;</a></div>
+          <button class="subbtn" type="submit">Register</button>
+        </form>
+   </div>
     
    
 </body>
